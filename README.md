@@ -23,6 +23,7 @@ Logging levels are being controlled via application.properties file:
 2. Info
 3. Trace
 
-API partially implements spring boots Micrometer module to allow flushing metrics to prometheus
-*Very basic and may not add any value
+API partially implements spring boots Micrometer module to allow flushing metrics to prometheus (very basic)
+
+
 
