@@ -2,7 +2,7 @@
 
 package com.example.menu.item;
 
-// ✨ New! Updated imports
+
 import org.springframework.http.ResponseEntity;
 
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +26,7 @@ public class ItemController {
         this.service = service;
     }
 
-    // ✨ New! GET controller methods
+   
     @GetMapping
     public ResponseEntity<List<Item>> findAll() {
         List<Item> items = service.findAll();
@@ -68,7 +68,7 @@ public class ItemController {
                 });
     }
 
-    // ✨ New! 👇 DELETE definition ✨
+    
     @DeleteMapping("/{id}")
     public ResponseEntity<Item> delete(@PathVariable("id") Long id) {
         service.delete(id);
